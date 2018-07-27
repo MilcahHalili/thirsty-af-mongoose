@@ -25,7 +25,7 @@ var beerSchema = new Schema({
 beerSchema.post('remove', function(beerDoc) {
     // obtain a reference to the Beer model
     var Bar = this.model('Bar');
-    // find all beer docs that have this bar
+    // find all bar docs that have this beer
     Bar.find({beers: beerDoc._id}, function(err, bars) {
         bars.forEach(function(barDoc) {
             // handy remove method on mongoose arrays
