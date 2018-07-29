@@ -8,6 +8,19 @@
 </head>
 <body>
     <h1>All Bars</h1>
-    
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <% bars.forEach(function(bar) { %>
+            <tr>
+                <td>
+                    <a href="/bars/<%= bar.id %>">
+                        <%= bar.name %>
+                    </a>
+                </td>
+            </tr>
+        <% }); %>
+    </table>
 </body>
 </html>
