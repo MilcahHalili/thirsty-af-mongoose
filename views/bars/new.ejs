@@ -1,0 +1,14 @@
+<%- include('../_partials/header') %>
+<h1>Add a Bar</h1>
+<a href="/bars">View Bars</a>
+<br><br>
+<form action="/bars" method="post">
+	<label>Name:
+	  <input type="text" name="title">
+	</label><br>
+	<label>Location:
+	  <input type="text" name="releaseYear">
+	</label><br>
+	<input type="submit" value="Add Bar">
+</form>
+<%- include('../_partials/footer') %>

@@ -1,18 +1,17 @@
 <%- include('../_partials/header') %>
-    <h1>All Bars</h1>
+    <h1>All Beers</h1>
     <table>
         <tr>
             <th>Name</th>
         </tr>
-        <% bars.forEach(function(bar) { %>
+        <% beers.forEach(function(beer) { %>
             <tr>
                 <td>
-                    <a href="/bars/<%= bar.id %>"><%= bar.name %></a>
+                    <a href="/beers/<%= beer.id %>">
+                        <%= beer.name %>
+                    </a>
                 </td>
             </tr>
         <% }); %>
     </table>
-    <br>
-    <br>
-    <a href="/bars/new">Add a Bar</a>
 <%- include('../_partials/footer') %>
