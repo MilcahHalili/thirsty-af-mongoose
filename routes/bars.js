@@ -12,4 +12,7 @@ router.get('/new', barsCtrl.new);
 // GET /bars/create
 router.post('/', barsCtrl.create);
 
+// GET /bars/show
+router.get('/:id', barsCtrl.show);
+
 module.exports = router;
