@@ -9,7 +9,7 @@ router.get('/', barsCtrl.index);
 // GET /bars/new
 router.get('/new', barsCtrl.new);
 
-// GET /bars/create
+// POST /bars/create
 router.post('/', barsCtrl.create);
 
 // GET /bars/show

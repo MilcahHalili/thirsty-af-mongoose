@@ -9,4 +9,10 @@ router.get('/', beersCtrl.index);
 // GET /beers/new
 router.get('/new', beersCtrl.new);
 
+// POST /beers/create
+router.post('/', beersCtrl.create);
+
+// GET /beers/show
+router.get('/:id', beersCtrl.show);
+
 module.exports = router;
